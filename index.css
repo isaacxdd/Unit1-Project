@@ -1,0 +1,90 @@
+*{
+    outline: 3px solid gold;
+}
+body{
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+   /* background-image: url("background.jpg"); */
+   background-image: url(https://rare-gallery.com/uploads/posts/501246-new-york-4k.jpg);
+   justify-content: center;
+   align-items: center;
+}
+#title{
+    padding-top: 10px;
+    padding-bottom: 20px;
+   
+}
+h1{
+    text-align: center;
+    background-color: white;
+    color: red;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    
+    width: 250px;
+    margin: auto;
+}
+.navbar{
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    background-color:rgb(244, 243, 243);
+}
+ul {
+    color: red;
+    font-style: oblique;
+}
+
+/* /////////////////////////// */
+
+.mainig{ 
+width: 100%;
+padding: 20px;
+margin: 100px auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 0px;
+}
+.box{
+    width: 340px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.mainig img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+}
+.box:hover{
+    transform:scale(1.3);
+    z-index:2;
+}
+
+/* ////////////////// */
+
+.Description{
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+p {
+  color: aliceblue;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0px;
+  
+ 
+}
