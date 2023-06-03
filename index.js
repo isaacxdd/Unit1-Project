@@ -8,12 +8,11 @@ $(() => {
     let $navbar =$('.navbar');
     
     $navbar.append($('<ul>').text('Home'));
-    $navbar.append($('<ul>').text('Facebook'));
-    $navbar.append($('<ul>').text('Youtube'));
-    $navbar.append($('<ul>').text('Twitter'));
-    $navbar.append($('<ul>').text('About us'));
-    $navbar.append($('<ul>').text('Contact us'));
-     
+    $navbar.append($('<ul>').append($('<a>').attr('href', 'https://www.facebook.com/Marvel/').text('Facebook')));
+    $navbar.append($('<ul>').append($('<a>').attr('href', 'https://www.youtube.com/channel/UCvC4D8onUfXzvjTOM-dBfEA').text('Youtube')));
+    $navbar.append($('<ul>').append($('<a>').attr('href', 'https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor').text('Twitter')));
+    $navbar.append($('<ul>').append($('<a>').attr('href', 'https://es.wikipedia.org/wiki/Marvel_Comics').text('About us')));
+    $navbar.append($('<ul>').append($('<a>').attr('href', 'https://www.marvel.com/corporate/marvel_unlimited_terms_original').text('Contact us')));
     });
     
 
@@ -52,7 +51,7 @@ $searchForm.on("submit", event => {
             );
             $result.html(`
                 <div>
-                    <b>name:&nbsp;</b> ${data.data.results[0].name}
+                    <b>&nbsp;</b> ${data.data.results[0].name}
                 </div>
 
                 <div>
