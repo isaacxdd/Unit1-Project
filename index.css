@@ -151,8 +151,40 @@ p {
   margin-top: 250px;
 }
 
-@media (max-height: 650px) {
-  body{
-      background-repeat: repeat;
+/* //////////////////// */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for mobile screens */
+  .middle {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .screen {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 0 3px black, 0 0 0 6px dimgray;
+    margin-bottom: 20px;
+  }
+  
+  .result {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .result > div {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .search {
+    margin-top: 50px;
+  }
+  .Description {
+    width: auto;
+    flex-wrap: wrap;
   }
 }
